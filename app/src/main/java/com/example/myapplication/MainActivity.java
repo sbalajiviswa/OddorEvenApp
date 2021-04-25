@@ -225,6 +225,7 @@ public class MainActivity extends AppCompatActivity {
                     NextGame.setVisibility(View.VISIBLE);
                     Tossok.setVisibility(View.INVISIBLE);
                     PlayerBat = false;
+                    TurnText.setText("Computer's Turn");
 
                 }
 
