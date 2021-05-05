@@ -239,24 +239,24 @@ public class MainActivity extends AppCompatActivity {
     }
     public void NextGame(View view){
         if((isitOdd == true && oddChoice == true) || (isitOdd == false && oddChoice == false)){
-            CoinLayout.animate().translationX(800);
+            CoinLayout.animate().translationX(1200);
             ChoiceLayout.setVisibility(View.VISIBLE);
         }else {
-            CoinLayout.animate().translationX(800);
+            CoinLayout.animate().translationX(1200);
             GameLayout.setVisibility(View.VISIBLE);
         }
     }
     public void bat(View view){
         PlayerBat = true;
         PlayerBatFirst = true;
-        ChoiceLayout.animate().translationX(-800);
+        ChoiceLayout.animate().translationX(-1200);
         GameLayout.setVisibility(View.VISIBLE);
         TurnText.setText("User's Turn");
     }
     public void bowl(View view){
         PlayerBat = false;
         PlayerBatFirst = false;
-        ChoiceLayout.animate().translationX(-800);
+        ChoiceLayout.animate().translationX(-1200);
         GameLayout.setVisibility(View.VISIBLE);
         TurnText.setText("Computer's Turn");
     }

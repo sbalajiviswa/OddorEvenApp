@@ -16,29 +16,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:visibility="visible">
+        tools:visibility="invisible">
 
         <Button
             android:id="@+id/button4"
             android:layout_width="0dp"
             android:layout_height="80dp"
-            android:layout_marginBottom="28dp"
-            android:layout_marginTop="147dp"
+            android:layout_marginTop="10dp"
             android:background="#020202"
             android:onClick="PlayAgain"
             android:text="Play Again!"
             android:textColor="#FF0000"
             android:textSize="30sp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/GameOverText" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
 
         <TextView
             android:id="@+id/GameOverText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="150dp"
             android:fontFamily="@font/galindo"
             android:text="TextView"
             android:textAlignment="center"
@@ -117,9 +117,10 @@
         android:id="@+id/CoinLayout"
         android:layout_width="0dp"
         android:layout_height="264dp"
+        android:layout_marginBottom="100dp"
         android:layout_marginEnd="100dp"
         android:layout_marginStart="100dp"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -169,11 +170,11 @@
             android:id="@+id/TossComputer"
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="20dp"
             android:text="It's Time for Toss"
             android:textAlignment="center"
-            android:textColor="#57303D"
-            android:textSize="24sp"
+            android:textColor="#fff"
+            android:textSize="23sp"
             app:layout_constraintBottom_toTopOf="@+id/TossPlayer"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -188,7 +189,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible">
 
         <Button
             android:id="@+id/Next"
@@ -210,7 +212,7 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="185dp"
+            android:layout_marginBottom="240dp"
             android:background="#00FFFFFF"
             android:onClick="cliked"
             android:text="Ok"
@@ -227,12 +229,12 @@
             android:id="@+id/editText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="50dp"
             android:ems="10"
             android:inputType="numberDecimal"
             android:textAlignment="center"
             android:textColor="@android:color/black"
-            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintBottom_toTopOf="@+id/Next"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -240,12 +242,12 @@
             android:id="@+id/TurnText"
             android:layout_width="0dp"
             android:layout_height="80dp"
-            android:layout_marginBottom="500dp"
+            android:layout_marginBottom="650dp"
             android:layout_marginTop="100dp"
             android:fontFamily="@font/coming_soon"
             android:gravity="center"
             android:textAlignment="center"
-            android:textColor="#0B0B0B"
+            android:textColor="#fff"
             android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -290,7 +292,7 @@
             android:id="@+id/CScoreText"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="10dp"
             android:layout_marginEnd="300dp"
             android:layout_marginTop="25dp"
             android:background="#0928C5"
@@ -315,6 +317,7 @@
             app:layout_constraintBottom_toTopOf="@+id/button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TurnText"
             tools:visibility="visible" />
 
         <TextView
